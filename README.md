@@ -1,2 +1,2 @@
 # MovieWebsite
-This is the source for the students
+This is the source for students
