@@ -4,11 +4,62 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- stylesheet -->
     <link rel="stylesheet" href="css/style.css" />
+
     <!-- title -->
     <title>TheCyberFirefly - Home</title>
+
     <!-- fav icon -->
     <link rel="shortcut icon" href="images/fav-icon.png" />
+
+    <!-- fonts -->
+    <link rel="stylesheet" href="fonts//poppins/Poppins-Black.ttf" />
+
+    <!-- Font awesome (use it for icons) -->
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
   </head>
-  <body></body>
+  <body>
+    <!-- navigation -->
+
+    <nav class="navigation">
+      <!-- menu button -->
+      <input type="checkbox" class="menu-btn" id="menu-btn" />
+      <label for="menu-btn" class="menu-icon">
+        <span class="nav-icon"></span>
+      </label>
+
+      <!-- logo -->
+      <a href="index.html" class="logo"> TheCyberFirefly<span>.HD</span> </a>
+      <!-- menu -->
+      <ul class="menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Genre</a></li>
+        <li><a href="#">TV Shows</a></li>
+        <li><a href="#">Movies</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+
+      <!-- search box -->
+      <form action="" class="search-box">
+        <!-- search input -->
+        <input
+          type="text"
+          name="search"
+          placeholder="Search Movie"
+          class="seach-input"
+          required
+        />
+        <!-- button -->
+        <button type="submit"><i class="fas fa-search"></i></button>
+      </form>
+    </nav>
+    <!-- nav end -->
+  </body>
 </html>
