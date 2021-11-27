@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- stylesheet -->
-    <link rel="stylesheet" href="css/style.css" />
+    <!-- <link rel="stylesheet" href="css/style.css" /> -->
 
     <!-- title -->
     <title>TheCyberFirefly - Home</title>
@@ -24,6 +24,21 @@
       integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
       crossorigin="anonymous"
     />
+
+    <!-- swipper css -->
+
+    <link rel="stylesheet" href="/css/swiper-bundle.min.css" />
+
+    <style>
+      nav {
+        background-color: red;
+        display: inline-block;
+      }
+      section {
+        background-color: blue;
+        /* display: inline-block; */
+      }
+    </style>
   </head>
   <body>
     <!-- navigation -->
@@ -102,5 +117,34 @@
       </div>
     </section>
     <!-- nav end -->
+
+    <!-- swipper js -->
+    <script src="js/swiper-bundle.min.js"></script>
+
+    <!-- initialize swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 4,
+            spaceBetween: 40,
+          },
+          1024: {
+            slidesPerView: 5,
+            spaceBetween: 50,
+          },
+        },
+      });
+    </script>
   </body>
 </html>
